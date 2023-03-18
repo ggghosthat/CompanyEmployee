@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sAoBJRrC88bMBmj3UrGqnqzFsFzu1aPTv6nUyi9yIMk1oQ/ZYR/7hHT4JfdhFrv55dbqaU0tj5wyDyC8Zmj17w==",
+  "dgSpecHash": "kY7jT79eClrM1ahT0jR1nqxF/iIDhj/8YV7RZ1qwtswQyMYUGrGCtuduDTBSSsSMB8kkr4kWXLUJOkQ85gmwEQ==",
   "success": true,
-  "projectFilePath": "E:\\C# projects\\CompanyEmployees\\CompanyEmployees.csproj",
+  "projectFilePath": "E:\\C# projects\\CompanyEmployees_Project\\CompanyEmployees\\CompanyEmployees.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ildar\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\ildar\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ildar\\.nuget\\packages\\nlog\\5.1.2\\nlog.5.1.2.nupkg.sha512",
     "C:\\Users\\ildar\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\ildar\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\ildar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
