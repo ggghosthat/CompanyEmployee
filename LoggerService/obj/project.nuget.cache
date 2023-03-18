@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DlvIDEU76KtsU36cj1uCx72aKgXqPOBWrxjXH2XZH88BFcUFQeeGWT15jApuGTtxHhAvU9fINnyQwCJP9TNrsw==",
+  "success": true,
+  "projectFilePath": "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\LoggerService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ildar\\.nuget\\packages\\nlog\\5.1.2\\nlog.5.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

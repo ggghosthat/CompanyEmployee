@@ -1,0 +1,133 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "NLog/5.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NLog/5.1.2": {
+      "sha512": "JfQY93ure3IPVTN3eabBewBGvrcXcWIlaesFEXdy5UzIymfIT9yCgLISYtM0cOhjWziIaUr/6Z9NC2RwtjwrsQ==",
+      "type": "package",
+      "path": "nlog/5.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "nlog.5.1.2.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/Contracts.csproj",
+      "msbuildProject": "../Contracts/Contracts.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Contracts >= 1.0.0",
+      "NLog >= 5.1.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ildar\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\LoggerService.csproj",
+      "projectName": "LoggerService",
+      "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\LoggerService.csproj",
+      "packagesPath": "C:\\Users\\ildar\\.nuget\\packages\\",
+      "outputPath": "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ildar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\Contracts.csproj": {
+              "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\Contracts.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "NLog": {
+            "target": "Package",
+            "version": "[5.1.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
