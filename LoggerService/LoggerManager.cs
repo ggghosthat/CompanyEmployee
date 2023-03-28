@@ -3,6 +3,7 @@ using Contracts.Interfaces;
 using NLog;
 
 namespace LoggerService;
+//These class represents logging logic with NLog library
 public class LoggerManager : ILoggerManager
 {
 	private static ILogger logger = LogManager.GetCurrentClassLogger();

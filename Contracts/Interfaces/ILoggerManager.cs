@@ -1,5 +1,6 @@
 
 namespace Contracts.Interfaces;
+//This interface defines special methods for LoggerManager
 public interface ILoggerManager
 {
 	void LogInfo(string message);

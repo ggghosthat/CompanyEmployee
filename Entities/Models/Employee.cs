@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities.Models;
-
+//simple employee model
 public class Employee
 {
 	[Column("EmployeeId")]

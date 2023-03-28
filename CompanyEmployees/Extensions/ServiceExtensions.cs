@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 
 namespace CompanyEmployees.Extensions;
+//This Extension class provides speciall extenssion methods to work with some services
 public static class ServiceExtensions
 {
 
@@ -27,9 +28,11 @@ public static class ServiceExtensions
 
 		});
 
+	//Provides logger service
 	public static void ConfigureLoggerService(this IServiceCollection services) =>
 		services.AddScoped<ILoggerManager, LoggerManager>();
 
+	//configuring sql (MsSql) connection
 	public static void ConfigureSqlContext(this IServiceCollection services,
 												IConfiguration configuration) =>
 		services.AddDbContext<RepositoryContext>(opts =>
