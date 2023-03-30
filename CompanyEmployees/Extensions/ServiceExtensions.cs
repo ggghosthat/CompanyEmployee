@@ -1,6 +1,7 @@
 using LoggerService;
 using Contracts.Interfaces;
 using Entities.Models;
+using Repository;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
@@ -38,4 +39,7 @@ public static class ServiceExtensions
 		services.AddDbContext<RepositoryContext>(opts =>
 			opts.UseSqlServer(configuration.GetConnectionString("sqlConnection"), b => 
 				b.MigrationsAssembly("CompanyEmployees")));
+
+	public static void ConfigureRepositoryManager(this IServiceCollection services) =>
+		services.AddScoped<IRepositoryManager, RepositoryManager>();
 }

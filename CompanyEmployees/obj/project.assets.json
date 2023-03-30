@@ -1401,6 +1401,21 @@
         "runtime": {
           "bin/placeholder/LoggerService.dll": {}
         }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Contracts": "1.0.0",
+          "Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.4"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        }
       }
     }
   },
@@ -4208,6 +4223,11 @@
       "type": "project",
       "path": "../LoggerService/LoggerService.csproj",
       "msbuildProject": "../LoggerService/LoggerService.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4218,6 +4238,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.4",
+      "Repository >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -4251,6 +4272,9 @@
             },
             "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\LoggerService.csproj": {
               "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\LoggerService.csproj"
+            },
+            "E:\\C# projects\\CompanyEmployees_Project\\Repository\\Repository.csproj": {
+              "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\Repository\\Repository.csproj"
             }
           }
         }

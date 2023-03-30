@@ -5,7 +5,7 @@ using Entities.Models;
 namespace Repository;
 //Repository class which give us possibility to interact with "employee" table
 public class EmployeeRepository : RepositoryBase<Company>, 
-								 ICompanyRepository
+								 IEmployeeRepository
 {
 	public EmployeeRepository(RepositoryContext repositoryContext) :
 			base(repositoryContext)
