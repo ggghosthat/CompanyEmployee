@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\C# projects\\CompanyEmployees_Project\\Entities\\Entities.csproj": {
-                "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\Entities\\Entities.csproj"
+              "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\Contracts.csproj": {
+                "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\Contracts.csproj"
               },
               "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\LoggerService.csproj": {
                 "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\LoggerService.csproj"
@@ -117,7 +117,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\C# projects\\CompanyEmployees_Project\\Entities\\Entities.csproj": {
+                "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -299,9 +303,6 @@
             "projectReferences": {
               "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\Contracts.csproj": {
                 "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\Contracts.csproj"
-              },
-              "E:\\C# projects\\CompanyEmployees_Project\\Entities\\Entities.csproj": {
-                "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\Entities\\Entities.csproj"
               }
             }
           }

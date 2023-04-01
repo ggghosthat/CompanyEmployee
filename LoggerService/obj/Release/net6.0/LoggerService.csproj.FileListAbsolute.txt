@@ -13,3 +13,7 @@ E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Release\net6.0\LoggerS
 E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Release\net6.0\refint\LoggerService.dll
 E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Release\net6.0\LoggerService.pdb
 E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Release\net6.0\ref\LoggerService.dll
+E:\C# projects\CompanyEmployees_Project\LoggerService\bin\Release\net6.0\LoggerService.runtimeconfig.json
+E:\C# projects\CompanyEmployees_Project\LoggerService\bin\Release\net6.0\Entities.dll
+E:\C# projects\CompanyEmployees_Project\LoggerService\bin\Release\net6.0\Entities.pdb
+E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Release\net6.0\LoggerService.genruntimeconfig.cache
