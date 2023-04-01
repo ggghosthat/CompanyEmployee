@@ -1,4 +1,5 @@
 using Contracts.Interfaces;
+using Entities.DTO;
 
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,7 +26,15 @@ public class CompaniesController : ControllerBase
 		try
 		{
 			var companies = _repositoryManager.Company.GetAllCompanies(false);
-			return Ok(companies);
+
+			var dtoResult = companies.Select(c => new CompanyDto
+			{
+				Id = c.Id,
+				Name = c.Name,
+				FullAddress = string.Join(" ", c.Address, c.Country)
+			}).ToList();
+
+			return Ok(dtoResult);
 		}
 		catch(Exception ex)
 		{
