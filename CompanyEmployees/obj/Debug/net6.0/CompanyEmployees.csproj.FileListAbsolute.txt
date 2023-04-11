@@ -125,3 +125,6 @@ E:\C# projects\CompanyEmployees_Project\CompanyEmployees\obj\Debug\net6.0\Compan
 E:\C# projects\CompanyEmployees_Project\CompanyEmployees\obj\Debug\net6.0\ref\CompanyEmployees.dll
 E:\C# projects\CompanyEmployees_Project\CompanyEmployees\bin\Debug\net6.0\Repository.dll
 E:\C# projects\CompanyEmployees_Project\CompanyEmployees\bin\Debug\net6.0\Repository.pdb
+E:\C# projects\CompanyEmployees_Project\CompanyEmployees\bin\Debug\net6.0\AutoMapper.dll
+E:\C# projects\CompanyEmployees_Project\CompanyEmployees\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\C# projects\CompanyEmployees_Project\CompanyEmployees\bin\Debug\net6.0\Newtonsoft.Json.dll

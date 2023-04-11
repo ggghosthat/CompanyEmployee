@@ -98,3 +98,6 @@ E:\C# projects\CompanyEmployees_Project\CompanyEmployees\obj\Release\net6.0\refi
 E:\C# projects\CompanyEmployees_Project\CompanyEmployees\obj\Release\net6.0\CompanyEmployees.pdb
 E:\C# projects\CompanyEmployees_Project\CompanyEmployees\obj\Release\net6.0\CompanyEmployees.genruntimeconfig.cache
 E:\C# projects\CompanyEmployees_Project\CompanyEmployees\obj\Release\net6.0\ref\CompanyEmployees.dll
+E:\C# projects\CompanyEmployees_Project\CompanyEmployees\bin\Release\net6.0\AutoMapper.dll
+E:\C# projects\CompanyEmployees_Project\CompanyEmployees\bin\Release\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\C# projects\CompanyEmployees_Project\CompanyEmployees\bin\Release\net6.0\Newtonsoft.Json.dll

@@ -31,7 +31,7 @@ public static class ServiceExtensions
 
 	//Provides logger service
 	public static void ConfigureLoggerService(this IServiceCollection services) =>
-		services.AddScoped<ILoggerManager, LoggerManager>();
+		services.AddTransient<ILoggerManager, LoggerManager>();
 
 	//configuring sql (MsSql) connection
 	public static void ConfigureSqlContext(this IServiceCollection services,

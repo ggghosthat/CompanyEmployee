@@ -2,7 +2,7 @@ using Contracts.Interfaces;
 using Entities.DTO;
 
 using Microsoft.AspNetCore.Mvc;
-
+using AutoMapper;
 namespace CompanyEmployees.Controllers;
 
 //These controller used for handling companies requests
@@ -12,34 +12,40 @@ public class CompaniesController : ControllerBase
 {
 	private readonly IRepositoryManager _repositoryManager;
 	private readonly ILoggerManager _loggerManager;
+	private readonly IMapper _mapper;
 
 	public CompaniesController(IRepositoryManager repositoryManager,
-							   ILoggerManager loggerManager)
+							   ILoggerManager loggerManager,
+							   IMapper mapper)
 	{
 		_repositoryManager = repositoryManager;
-		_loggerManager = _loggerManager;
+		_loggerManager = loggerManager;
+		_mapper = mapper;
 	}
 
 	[HttpGet]
 	public IActionResult GetCompanies()
 	{
-		try
-		{
-			var companies = _repositoryManager.Company.GetAllCompanies(false);
+		var companies = _repositoryManager.Company.GetAllCompanies(false);
 
-			var dtoResult = companies.Select(c => new CompanyDto
-			{
-				Id = c.Id,
-				Name = c.Name,
-				FullAddress = string.Join(" ", c.Address, c.Country)
-			}).ToList();
+		var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
 
-			return Ok(dtoResult);
-		}
-		catch(Exception ex)
+		return Ok(companiesDto);
+	}
+
+	[HttpGet("{id}")]
+	public IActionResult GetCompany(Guid id)
+	{
+		var company = _repositoryManager.Company.GetCompany(id, false);
+
+		if (company == null)
 		{
-			_loggerManager.LogError($"Something went wrong in the {nameof(GetCompanies)} action \n{ex}");
-			return StatusCode(500, "Internal server error");
+			_loggerManager.LogInfo($"Company with id: {id} does not exists in the database");
+			return NotFound();
 		}
+
+		var companyDto = _mapper.Map<CompanyDto>(company);
+
+		return Ok(companyDto);
 	}
 }

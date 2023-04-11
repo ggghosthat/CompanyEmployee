@@ -43,3 +43,4 @@ E:\C# projects\CompanyEmployees_Project\Entities\obj\Debug\net6.0\refint\Entitie
 E:\C# projects\CompanyEmployees_Project\Entities\obj\Debug\net6.0\Entities.pdb
 E:\C# projects\CompanyEmployees_Project\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache
 E:\C# projects\CompanyEmployees_Project\Entities\obj\Debug\net6.0\ref\Entities.dll
+E:\C# projects\CompanyEmployees_Project\Entities\bin\Debug\net6.0\Newtonsoft.Json.dll
