@@ -3,6 +3,7 @@ using Entities.Models;
 
 using AutoMapper;
 namespace CompanyEmployees.Mapper;
+//Here we resolve our mapping logic
 public class MappingProfile : Profile
 {
 	public MappingProfile()
@@ -12,5 +13,6 @@ public class MappingProfile : Profile
 					opt => opt.MapFrom(x => string.Join(' ', x.Address, x.Country)));
 
 		CreateMap<Employee, EmployeeDto>();
+		CreateMap<CompanyForCreationDto, Company>();
 	}
 }
