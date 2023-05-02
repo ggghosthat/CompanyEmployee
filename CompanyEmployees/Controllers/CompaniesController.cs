@@ -50,6 +50,28 @@ public class CompaniesController : ControllerBase
 		return Ok(companyDto);
 	}
 
+	[HttpGet("collection/({ids})", Name = "CompanyCollection")]
+	public IActionResult GetCompanyCollection(IEnumerable<Guid> ids)
+	{
+		if(ids == null)
+		{
+			_loggerManager.LogError("Parameter ids is null");
+			return BadRequest("Parameter ids is null");
+		}
+
+		var companyEntities = _repositoryManager.Company.GetByIds(ids, trackChanges: false);
+
+		if(ids.Count() != companyEntities.Count())
+		{
+			_loggerManager.LogError("Some ids are not valid in a collection");
+			return NotFound();
+		}
+
+		var companiesToReturn = _mapper.Map<IEnumerable<CompanyDto>>(companyEntities);
+		return Ok(companiesToReturn);
+	}
+
+
 	[HttpPost]
 	public IActionResult CreateCompany([FromBody]CompanyForCreationDto company)
 	{
@@ -67,5 +89,29 @@ public class CompaniesController : ControllerBase
 		var companyToReturn = _mapper.Map<CompanyDto>(companyEntity);
 
 		return CreatedAtRoute("CompanyById", new { id = companyToReturn.Id}, companyToReturn);
+	}
+
+	[HttpPost("collection")]
+	public IActionResult createCompanyCollection([FromBody]
+						 IEnumerable<CompanyForCreationDto> companyCollection)
+	{
+		if(companyCollection == null)
+		{
+			_loggerManager.LogError("Company collection sent from client is null");
+			return BadRequest("Company collection is null");
+		}
+
+		var companyEntities = _mapper.Map<IEnumerable<Company>>(companyCollection);
+		foreach(var company in companyEntities)
+		{
+			_repositoryManager.Company.CreateCompany(company);
+		}
+
+		_repositoryManager.Save();
+
+		var companyCollectionToReturn = _mapper.Map<IEnumerable<CompanyDto>>(companyEntities);
+		var ids = string.Join(",", companyCollectionToReturn.Select(c => c.Id));
+
+		return CreatedAtRoute("CompanyCollection", new {ids}, companyCollectionToReturn);
 	}
 }
