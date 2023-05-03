@@ -1,6 +1,7 @@
 using Contracts.Interfaces;
 using Entities.DTO;
 using Entities.Models;
+using CompanyEmployees.Mapper;
 
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
@@ -51,7 +52,8 @@ public class CompaniesController : ControllerBase
 	}
 
 	[HttpGet("collection/({ids})", Name = "CompanyCollection")]
-	public IActionResult GetCompanyCollection(IEnumerable<Guid> ids)
+	public IActionResult GetCompanyCollection([ModelBinder(BinderType = typeof(ArrayModelBinder))]
+												IEnumerable<Guid> ids)
 	{
 		if(ids == null)
 		{
