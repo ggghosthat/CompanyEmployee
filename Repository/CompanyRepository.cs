@@ -29,4 +29,7 @@ public class CompanyRepository : RepositoryBase<Company>,
 
 	public void CreateCompany(Company company) =>
 		Create(company);
+
+	public void DeleteCompany(Company company) =>
+		Delete(company);
 }

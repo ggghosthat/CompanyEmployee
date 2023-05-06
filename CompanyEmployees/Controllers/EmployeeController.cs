@@ -89,4 +89,27 @@ public class EmployeesController : ControllerBase
 
 		return CreatedAtRoute("GetEmployeeForCompany", new {companyId, id = employeeToReturn.Id}, employeeToReturn);
 	}
+
+	[HttpDelete("{id}")]
+	public IActionResult DeleteEmployeeForCompany(Guid companyId, Guid id)
+	{
+		var company = _repositoryManager.Company.GetCompany(companyId, trackChanges: false);
+		if (company == null)
+		{
+			_loggerManager.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
+			return NotFound();
+		}
+
+		var employeeForCompany = _repositoryManager.Employee.GetEmployee(companyId, id, trackChanges: false);
+		if(employeeForCompany == null)
+		{
+			_loggerManager.LogInfo($"Employee with id: {id} doesn't exist in the database.");
+			return NotFound();
+		}
+
+		_repositoryManager.Employee.DeleteEmployee(employeeForCompany);
+		_repositoryManager.Save();
+
+		return NoContent();
+	}
 }
