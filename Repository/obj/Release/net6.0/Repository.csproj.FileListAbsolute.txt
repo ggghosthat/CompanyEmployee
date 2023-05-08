@@ -1,19 +1,38 @@
-E:\C# projects\CompanyEmployees_Project\Repository\bin\Release\net6.0\Repository.deps.json
-E:\C# projects\CompanyEmployees_Project\Repository\bin\Release\net6.0\Repository.runtimeconfig.json
-E:\C# projects\CompanyEmployees_Project\Repository\bin\Release\net6.0\Repository.dll
-E:\C# projects\CompanyEmployees_Project\Repository\bin\Release\net6.0\Repository.pdb
-E:\C# projects\CompanyEmployees_Project\Repository\bin\Release\net6.0\Contracts.dll
-E:\C# projects\CompanyEmployees_Project\Repository\bin\Release\net6.0\Entities.dll
-E:\C# projects\CompanyEmployees_Project\Repository\bin\Release\net6.0\Contracts.pdb
-E:\C# projects\CompanyEmployees_Project\Repository\bin\Release\net6.0\Entities.pdb
-E:\C# projects\CompanyEmployees_Project\Repository\obj\Release\net6.0\Repository.csproj.AssemblyReference.cache
-E:\C# projects\CompanyEmployees_Project\Repository\obj\Release\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
-E:\C# projects\CompanyEmployees_Project\Repository\obj\Release\net6.0\Repository.AssemblyInfoInputs.cache
-E:\C# projects\CompanyEmployees_Project\Repository\obj\Release\net6.0\Repository.AssemblyInfo.cs
-E:\C# projects\CompanyEmployees_Project\Repository\obj\Release\net6.0\Repository.csproj.CoreCompileInputs.cache
-E:\C# projects\CompanyEmployees_Project\Repository\obj\Release\net6.0\Repository.csproj.CopyComplete
-E:\C# projects\CompanyEmployees_Project\Repository\obj\Release\net6.0\Repository.dll
-E:\C# projects\CompanyEmployees_Project\Repository\obj\Release\net6.0\refint\Repository.dll
-E:\C# projects\CompanyEmployees_Project\Repository\obj\Release\net6.0\Repository.pdb
-E:\C# projects\CompanyEmployees_Project\Repository\obj\Release\net6.0\Repository.genruntimeconfig.cache
-E:\C# projects\CompanyEmployees_Project\Repository\obj\Release\net6.0\ref\Repository.dll
+E:/C# projects/CompanyEmployees_Project/Repository/bin/Release/net6.0/Repository.deps.json
+E:/C# projects/CompanyEmployees_Project/Repository/bin/Release/net6.0/Repository.runtimeconfig.json
+E:/C# projects/CompanyEmployees_Project/Repository/bin/Release/net6.0/Repository.dll
+E:/C# projects/CompanyEmployees_Project/Repository/bin/Release/net6.0/Repository.pdb
+E:/C# projects/CompanyEmployees_Project/Repository/bin/Release/net6.0/Contracts.dll
+E:/C# projects/CompanyEmployees_Project/Repository/bin/Release/net6.0/Entities.dll
+E:/C# projects/CompanyEmployees_Project/Repository/bin/Release/net6.0/Contracts.pdb
+E:/C# projects/CompanyEmployees_Project/Repository/bin/Release/net6.0/Entities.pdb
+E:/C# projects/CompanyEmployees_Project/Repository/obj/Release/net6.0/Repository.csproj.AssemblyReference.cache
+E:/C# projects/CompanyEmployees_Project/Repository/obj/Release/net6.0/Repository.GeneratedMSBuildEditorConfig.editorconfig
+E:/C# projects/CompanyEmployees_Project/Repository/obj/Release/net6.0/Repository.AssemblyInfoInputs.cache
+E:/C# projects/CompanyEmployees_Project/Repository/obj/Release/net6.0/Repository.AssemblyInfo.cs
+E:/C# projects/CompanyEmployees_Project/Repository/obj/Release/net6.0/Repository.csproj.CoreCompileInputs.cache
+E:/C# projects/CompanyEmployees_Project/Repository/obj/Release/net6.0/Repository.csproj.CopyComplete
+E:/C# projects/CompanyEmployees_Project/Repository/obj/Release/net6.0/Repository.dll
+E:/C# projects/CompanyEmployees_Project/Repository/obj/Release/net6.0/refint/Repository.dll
+E:/C# projects/CompanyEmployees_Project/Repository/obj/Release/net6.0/Repository.pdb
+E:/C# projects/CompanyEmployees_Project/Repository/obj/Release/net6.0/Repository.genruntimeconfig.cache
+E:/C# projects/CompanyEmployees_Project/Repository/obj/Release/net6.0/ref/Repository.dll
+/home/ggghosthat/repos/CompanyEmployee/Repository/bin/Release/net6.0/Repository.deps.json
+/home/ggghosthat/repos/CompanyEmployee/Repository/bin/Release/net6.0/Repository.runtimeconfig.json
+/home/ggghosthat/repos/CompanyEmployee/Repository/bin/Release/net6.0/Repository.dll
+/home/ggghosthat/repos/CompanyEmployee/Repository/bin/Release/net6.0/Repository.pdb
+/home/ggghosthat/repos/CompanyEmployee/Repository/bin/Release/net6.0/Contracts.dll
+/home/ggghosthat/repos/CompanyEmployee/Repository/bin/Release/net6.0/Entities.dll
+/home/ggghosthat/repos/CompanyEmployee/Repository/bin/Release/net6.0/Contracts.pdb
+/home/ggghosthat/repos/CompanyEmployee/Repository/bin/Release/net6.0/Entities.pdb
+/home/ggghosthat/repos/CompanyEmployee/Repository/obj/Release/net6.0/Repository.csproj.AssemblyReference.cache
+/home/ggghosthat/repos/CompanyEmployee/Repository/obj/Release/net6.0/Repository.GeneratedMSBuildEditorConfig.editorconfig
+/home/ggghosthat/repos/CompanyEmployee/Repository/obj/Release/net6.0/Repository.AssemblyInfoInputs.cache
+/home/ggghosthat/repos/CompanyEmployee/Repository/obj/Release/net6.0/Repository.AssemblyInfo.cs
+/home/ggghosthat/repos/CompanyEmployee/Repository/obj/Release/net6.0/Repository.csproj.CoreCompileInputs.cache
+/home/ggghosthat/repos/CompanyEmployee/Repository/obj/Release/net6.0/Repository.csproj.CopyComplete
+/home/ggghosthat/repos/CompanyEmployee/Repository/obj/Release/net6.0/Repository.dll
+/home/ggghosthat/repos/CompanyEmployee/Repository/obj/Release/net6.0/refint/Repository.dll
+/home/ggghosthat/repos/CompanyEmployee/Repository/obj/Release/net6.0/Repository.pdb
+/home/ggghosthat/repos/CompanyEmployee/Repository/obj/Release/net6.0/Repository.genruntimeconfig.cache
+/home/ggghosthat/repos/CompanyEmployee/Repository/obj/Release/net6.0/ref/Repository.dll

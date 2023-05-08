@@ -1,19 +1,38 @@
-E:\C# projects\CompanyEmployees_Project\LoggerService\bin\Debug\net6.0\LoggerService.deps.json
-E:\C# projects\CompanyEmployees_Project\LoggerService\bin\Debug\net6.0\LoggerService.runtimeconfig.json
-E:\C# projects\CompanyEmployees_Project\LoggerService\bin\Debug\net6.0\LoggerService.dll
-E:\C# projects\CompanyEmployees_Project\LoggerService\bin\Debug\net6.0\LoggerService.pdb
-E:\C# projects\CompanyEmployees_Project\LoggerService\bin\Debug\net6.0\Contracts.dll
-E:\C# projects\CompanyEmployees_Project\LoggerService\bin\Debug\net6.0\Entities.dll
-E:\C# projects\CompanyEmployees_Project\LoggerService\bin\Debug\net6.0\Contracts.pdb
-E:\C# projects\CompanyEmployees_Project\LoggerService\bin\Debug\net6.0\Entities.pdb
-E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Debug\net6.0\LoggerService.csproj.AssemblyReference.cache
-E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Debug\net6.0\LoggerService.GeneratedMSBuildEditorConfig.editorconfig
-E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Debug\net6.0\LoggerService.AssemblyInfoInputs.cache
-E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Debug\net6.0\LoggerService.AssemblyInfo.cs
-E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Debug\net6.0\LoggerService.csproj.CoreCompileInputs.cache
-E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Debug\net6.0\LoggerService.csproj.CopyComplete
-E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Debug\net6.0\LoggerService.dll
-E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Debug\net6.0\refint\LoggerService.dll
-E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Debug\net6.0\LoggerService.pdb
-E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Debug\net6.0\LoggerService.genruntimeconfig.cache
-E:\C# projects\CompanyEmployees_Project\LoggerService\obj\Debug\net6.0\ref\LoggerService.dll
+E:/C# projects/CompanyEmployees_Project/LoggerService/bin/Debug/net6.0/LoggerService.deps.json
+E:/C# projects/CompanyEmployees_Project/LoggerService/bin/Debug/net6.0/LoggerService.runtimeconfig.json
+E:/C# projects/CompanyEmployees_Project/LoggerService/bin/Debug/net6.0/LoggerService.dll
+E:/C# projects/CompanyEmployees_Project/LoggerService/bin/Debug/net6.0/LoggerService.pdb
+E:/C# projects/CompanyEmployees_Project/LoggerService/bin/Debug/net6.0/Contracts.dll
+E:/C# projects/CompanyEmployees_Project/LoggerService/bin/Debug/net6.0/Entities.dll
+E:/C# projects/CompanyEmployees_Project/LoggerService/bin/Debug/net6.0/Contracts.pdb
+E:/C# projects/CompanyEmployees_Project/LoggerService/bin/Debug/net6.0/Entities.pdb
+E:/C# projects/CompanyEmployees_Project/LoggerService/obj/Debug/net6.0/LoggerService.csproj.AssemblyReference.cache
+E:/C# projects/CompanyEmployees_Project/LoggerService/obj/Debug/net6.0/LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+E:/C# projects/CompanyEmployees_Project/LoggerService/obj/Debug/net6.0/LoggerService.AssemblyInfoInputs.cache
+E:/C# projects/CompanyEmployees_Project/LoggerService/obj/Debug/net6.0/LoggerService.AssemblyInfo.cs
+E:/C# projects/CompanyEmployees_Project/LoggerService/obj/Debug/net6.0/LoggerService.csproj.CoreCompileInputs.cache
+E:/C# projects/CompanyEmployees_Project/LoggerService/obj/Debug/net6.0/LoggerService.csproj.CopyComplete
+E:/C# projects/CompanyEmployees_Project/LoggerService/obj/Debug/net6.0/LoggerService.dll
+E:/C# projects/CompanyEmployees_Project/LoggerService/obj/Debug/net6.0/refint/LoggerService.dll
+E:/C# projects/CompanyEmployees_Project/LoggerService/obj/Debug/net6.0/LoggerService.pdb
+E:/C# projects/CompanyEmployees_Project/LoggerService/obj/Debug/net6.0/LoggerService.genruntimeconfig.cache
+E:/C# projects/CompanyEmployees_Project/LoggerService/obj/Debug/net6.0/ref/LoggerService.dll
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/bin/Debug/net6.0/LoggerService.deps.json
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/bin/Debug/net6.0/LoggerService.runtimeconfig.json
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/bin/Debug/net6.0/LoggerService.dll
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/bin/Debug/net6.0/LoggerService.pdb
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/bin/Debug/net6.0/Contracts.dll
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/bin/Debug/net6.0/Entities.dll
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/bin/Debug/net6.0/Contracts.pdb
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/bin/Debug/net6.0/Entities.pdb
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/Debug/net6.0/LoggerService.csproj.AssemblyReference.cache
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/Debug/net6.0/LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/Debug/net6.0/LoggerService.AssemblyInfoInputs.cache
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/Debug/net6.0/LoggerService.AssemblyInfo.cs
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/Debug/net6.0/LoggerService.csproj.CoreCompileInputs.cache
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/Debug/net6.0/LoggerService.csproj.CopyComplete
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/Debug/net6.0/LoggerService.dll
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/Debug/net6.0/refint/LoggerService.dll
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/Debug/net6.0/LoggerService.pdb
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/Debug/net6.0/LoggerService.genruntimeconfig.cache
+/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/Debug/net6.0/ref/LoggerService.dll

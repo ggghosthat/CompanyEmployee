@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\LoggerService.csproj": {}
+    "/home/ggghosthat/repos/CompanyEmployee/LoggerService/LoggerService.csproj": {}
   },
   "projects": {
-    "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\Contracts.csproj": {
+    "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\Contracts.csproj",
-        "packagesPath": "C:\\Users\\ildar\\.nuget\\packages\\",
-        "outputPath": "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\obj\\",
+        "projectPath": "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj",
+        "packagesPath": "/home/ggghosthat/.nuget/packages/",
+        "outputPath": "/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ildar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/ggghosthat/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\C# projects\\CompanyEmployees_Project\\Entities\\Entities.csproj": {
-                "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\Entities\\Entities.csproj"
+              "/home/ggghosthat/repos/CompanyEmployee/Entities/Entities.csproj": {
+                "projectPath": "/home/ggghosthat/repos/CompanyEmployee/Entities/Entities.csproj"
               }
             }
           }
@@ -57,21 +57,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/ggghosthat/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\C# projects\\CompanyEmployees_Project\\Entities\\Entities.csproj": {
+    "/home/ggghosthat/repos/CompanyEmployee/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# projects\\CompanyEmployees_Project\\Entities\\Entities.csproj",
+        "projectUniqueName": "/home/ggghosthat/repos/CompanyEmployee/Entities/Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\ildar\\.nuget\\packages\\",
-        "outputPath": "E:\\C# projects\\CompanyEmployees_Project\\Entities\\obj\\",
+        "projectPath": "/home/ggghosthat/repos/CompanyEmployee/Entities/Entities.csproj",
+        "packagesPath": "/home/ggghosthat/.nuget/packages/",
+        "outputPath": "/home/ggghosthat/repos/CompanyEmployee/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ildar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/ggghosthat/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -124,21 +124,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/ggghosthat/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\LoggerService.csproj": {
+    "/home/ggghosthat/repos/CompanyEmployee/LoggerService/LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\LoggerService.csproj",
+        "projectUniqueName": "/home/ggghosthat/repos/CompanyEmployee/LoggerService/LoggerService.csproj",
         "projectName": "LoggerService",
-        "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\LoggerService.csproj",
-        "packagesPath": "C:\\Users\\ildar\\.nuget\\packages\\",
-        "outputPath": "E:\\C# projects\\CompanyEmployees_Project\\LoggerService\\obj\\",
+        "projectPath": "/home/ggghosthat/repos/CompanyEmployee/LoggerService/LoggerService.csproj",
+        "packagesPath": "/home/ggghosthat/.nuget/packages/",
+        "outputPath": "/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ildar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/ggghosthat/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -150,8 +150,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\Contracts.csproj": {
-                "projectPath": "E:\\C# projects\\CompanyEmployees_Project\\Contracts\\Contracts.csproj"
+              "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj": {
+                "projectPath": "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj"
               }
             }
           }
@@ -187,7 +187,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/ggghosthat/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
         }
       }
     }
