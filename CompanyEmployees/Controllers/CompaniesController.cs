@@ -82,6 +82,12 @@ public class CompaniesController : ControllerBase
 			_loggerManager.LogError("CompanyForCreationDto object sent from client is null");
 			return BadRequest("CompanyForCreationDto object is null");
 		}
+        
+        if(!ModelState.IsValid)
+        {
+            _loggerManager.LogError("Invalid model data for CompanyForCreationDto object");
+            return UnprocessableEntity(ModelState);
+        }
 
 		var companyEntity = _mapper.Map<Company>(company);
 
@@ -94,7 +100,7 @@ public class CompaniesController : ControllerBase
 	}
 
 	[HttpPost("collection")]
-	public IActionResult createCompanyCollection([FromBody]
+	public IActionResult CreateCompanyCollection([FromBody]
 						 IEnumerable<CompanyForCreationDto> companyCollection)
 	{
 		if(companyCollection == null)
@@ -102,6 +108,13 @@ public class CompaniesController : ControllerBase
 			_loggerManager.LogError("Company collection sent from client is null");
 			return BadRequest("Company collection is null");
 		}
+
+        if(!ModelState.IsValid)
+        {
+            _loggerManager.LogError("Invalid model data for CompanyForCreationDto object");
+            return UnprocessableEntity(ModelState);
+        }
+
 
 		var companyEntities = _mapper.Map<IEnumerable<Company>>(companyCollection);
 		foreach(var company in companyEntities)

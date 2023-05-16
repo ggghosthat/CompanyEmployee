@@ -75,6 +75,12 @@ public class EmployeesController : ControllerBase
 			return BadRequest("EmployeeForCreationDto object is null");
 		}
 
+        if(!ModelState.IsValid)
+        {
+            _loggerManager.LogError("Invalid data for model state of EmployeeForCreationDto object.");
+            return UnprocessableEntity(ModelState);
+        }
+
 		var company = _repositoryManager.Company.GetCompany(companyId, trackChanges: false);
 		if(company == null)
 		{
@@ -122,6 +128,12 @@ public class EmployeesController : ControllerBase
         {
             _loggerManager.LogError("EmployeeForUpdateDto object sent from client is null.");
             return BadRequest("EmployeeForUpdateDto object is null");
+        }
+
+        if(!ModelState.IsValid)
+        {
+            _loggerManager.LogError("Invalid model state for the EmployeeForUpdateDto object.");
+            return UnprocessableEntity(ModelState);
         }
 
         var company = _repositoryManager.Company.GetCompany(companyId, trackChanges: false);

@@ -4,6 +4,7 @@ using LoggerService;
 
 using System.IO;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.DependencyInjection;
 using NLog;
@@ -22,6 +23,7 @@ builder.Services.ConfigureLoggerService();
 //builder.Services.ConfigureSqlContext(configuration);
 builder.Services.ConfigurePostgresContext(configuration);
 builder.Services.ConfigureRepositoryManager();
+builder.Services.Configure<ApiBehaviorOptions>(options => options.SuppressModelStateInvalidFilter = true);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

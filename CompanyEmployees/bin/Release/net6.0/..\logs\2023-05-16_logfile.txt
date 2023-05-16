@@ -1,0 +1,10 @@
+2023-05-16 13:45:39.5700 ERROR Invalid data for model state of EmployeeForCreationDto object.
+2023-05-16 13:46:35.4892 ERROR Invalid data for model state of EmployeeForCreationDto object.
+2023-05-16 13:59:16.5772 ERROR Invalid model data for CompanyForCreationDto object
+2023-05-16 13:59:23.0573 ERROR Invalid model data for CompanyForCreationDto object
+2023-05-16 13:59:34.8874 ERROR Invalid model data for CompanyForCreationDto object
+2023-05-16 13:59:48.6361 ERROR Invalid model data for CompanyForCreationDto object
+2023-05-16 22:36:34.6633 ERROR Invalid data for model state of EmployeeForCreationDto object.
+2023-05-16 22:54:30.5359 ERROR Invalid data for model state of EmployeeForCreationDto object.
+2023-05-16 22:54:52.1563 ERROR Invalid data for model state of EmployeeForCreationDto object.
+2023-05-16 22:55:02.6413 ERROR Invalid data for model state of EmployeeForCreationDto object.
