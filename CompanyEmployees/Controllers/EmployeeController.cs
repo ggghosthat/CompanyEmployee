@@ -3,7 +3,9 @@ using Entities.DTO;
 using Entities.Models;
 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.JsonPatch;
 using AutoMapper;
+
 namespace CompanyEmployees.Controllers;
 //These controller used for handling employees requests
 [ApiController]
@@ -137,6 +139,39 @@ public class EmployeesController : ControllerBase
         }
 
         _mapper.Map(employee, employeeEntity);
+        _repositoryManager.Save();
+
+        return NoContent();
+    }
+
+    [HttpPatch("{id}")]
+    public IActionResult PartiallyUpdateEmployeeForCompany(Guid companyId, Guid id, [FromBody]JsonPatchDocument<EmployeeForUpdateDto> patchDoc)
+    {
+        if(patchDoc == null)
+        {
+            _loggerManager.LogError("patchDoc sent from client side is null value");
+            return BadRequest("patchDoc is null value");
+        }
+
+        var company = _repositoryManager.Company.GetCompany(companyId, trackChanges: false);
+        if(company == null)
+        {
+            _loggerManager.LogInfo($"Company with id: {companyId} not found in database.");
+            return NotFound();
+        }
+
+        var employeeEntity = _repositoryManager.Employee.GetEmployee(companyId, id, trackChanges: true);
+        if(employeeEntity == null)
+        {
+            _loggerManager.LogInfo($"Employee with id: {id} not found in database.");
+            return NotFound();
+        }
+
+        var employee2Patch = _mapper.Map<EmployeeForUpdateDto>(employeeEntity);
+        
+        patchDoc.ApplyTo(employee2Patch);
+
+        _mapper.Map(employee2Patch, employeeEntity);
         _repositoryManager.Save();
 
         return NoContent();

@@ -206,3 +206,6 @@ E:/C# projects/CompanyEmployees_Project/CompanyEmployees/bin/Release/net6.0/Newt
 /home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/obj/Release/net6.0/CompanyEmployees.pdb
 /home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/obj/Release/net6.0/CompanyEmployees.genruntimeconfig.cache
 /home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/obj/Release/net6.0/ref/CompanyEmployees.dll
+/home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/bin/Release/net6.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/bin/Release/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/bin/Release/net6.0/Newtonsoft.Json.Bson.dll

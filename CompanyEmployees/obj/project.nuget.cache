@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oSHa9CKYV72WhSk0j4zDV+PnCu4REPosQw93jd5a14UCESQ1V9MpoZZCfwZZAtlOxiI8vu4NKxrCbJ0QKQU9VA==",
+  "dgSpecHash": "/4TRHaMuMLqzINmC8Hf6tGC7k6MceOlK0OlT4dqrmqQLkDN3xkGUuK2SCxuvgd1t6zg1qQFbeKi+vMAYuW5n4Q==",
   "success": true,
   "projectFilePath": "/home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/CompanyEmployees.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "/home/ggghosthat/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/home/ggghosthat/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",
     "/home/ggghosthat/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/ggghosthat/.nuget/packages/microsoft.aspnetcore.jsonpatch/7.0.5/microsoft.aspnetcore.jsonpatch.7.0.5.nupkg.sha512",
+    "/home/ggghosthat/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/6.0.16/microsoft.aspnetcore.mvc.newtonsoftjson.6.0.16.nupkg.sha512",
     "/home/ggghosthat/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/ggghosthat/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/ggghosthat/.nuget/packages/microsoft.data.sqlclient/5.0.1/microsoft.data.sqlclient.5.0.1.nupkg.sha512",
@@ -48,6 +50,7 @@
     "/home/ggghosthat/.nuget/packages/microsoft.win32.systemevents/5.0.0/microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "/home/ggghosthat/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/home/ggghosthat/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/ggghosthat/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/home/ggghosthat/.nuget/packages/nlog/5.1.2/nlog.5.1.2.nupkg.sha512",
     "/home/ggghosthat/.nuget/packages/npgsql/7.0.4/npgsql.7.0.4.nupkg.sha512",
     "/home/ggghosthat/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.4/npgsql.entityframeworkcore.postgresql.7.0.4.nupkg.sha512",
