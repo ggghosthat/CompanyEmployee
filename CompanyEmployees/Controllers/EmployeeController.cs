@@ -181,7 +181,15 @@ public class EmployeesController : ControllerBase
 
         var employee2Patch = _mapper.Map<EmployeeForUpdateDto>(employeeEntity);
         
-        patchDoc.ApplyTo(employee2Patch);
+        patchDoc.ApplyTo(employee2Patch, ModelState);
+
+        TryValidateModel(employee2Patch);
+
+        if(!ModelState.IsValid)
+        {
+            _loggerManager.LogError("Invalid model state for the patch document.");
+            return UnprocessableEntity(ModelState);
+        }
 
         _mapper.Map(employee2Patch, employeeEntity);
         _repositoryManager.Save();

@@ -155,6 +155,12 @@ public class CompaniesController : ControllerBase
             return BadRequest("CompanyForUpdateDto object is null.");
         }
 
+        if(!ModelState.IsValid)
+        {
+            _loggerManager.LogError("Invalid data for model state of CompanyForUpdateDto object.");
+            return UnprocessableEntity(ModelState);
+        }
+
         var companyEntity = _repositoryManager.Company.GetCompany(id, trackChanges: true);
         if(companyEntity == null)
         {
