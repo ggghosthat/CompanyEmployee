@@ -1,6 +1,7 @@
 using Contracts.Interfaces;
 using Entities.Models;
 
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 namespace Repository;
 //This class presents existed repositories and save logic
@@ -37,8 +38,8 @@ public class RepositoryManager : IRepositoryManager
 		}
 	}
 
-	public void Save()
+	public Task SaveAsync()
 	{
-		_repositoryContext.SaveChanges();
+		return _repositoryContext.SaveChangesAsync();
 	}
 }

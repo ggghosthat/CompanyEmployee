@@ -3,6 +3,7 @@ using Entities.DTO;
 using Entities.Models;
 using CompanyEmployees.Mapper;
 
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 namespace CompanyEmployees.Controllers;
@@ -26,9 +27,9 @@ public class CompaniesController : ControllerBase
 	}
 
 	[HttpGet]
-	public IActionResult GetCompanies()
+	public async Task<IActionResult> GetCompanies()
 	{
-		var companies = _repositoryManager.Company.GetAllCompanies(false);
+		var companies = await _repositoryManager.Company.GetAllCompaniesAsync(false);
 
 		var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
 
@@ -36,9 +37,9 @@ public class CompaniesController : ControllerBase
 	}
 
 	[HttpGet("{id}", Name = "CompanyById" )]
-	public IActionResult GetCompany(Guid id)
+	public async Task<IActionResult> GetCompany(Guid id)
 	{
-		var company = _repositoryManager.Company.GetCompany(id, false);
+		var company = await _repositoryManager.Company.GetCompanyAsync(id, false);
 
 		if (company == null)
 		{
@@ -52,7 +53,7 @@ public class CompaniesController : ControllerBase
 	}
 
 	[HttpGet("collection/({ids})", Name = "CompanyCollection")]
-	public IActionResult GetCompanyCollection([ModelBinder(BinderType = typeof(ArrayModelBinder))]
+	public async Task<IActionResult> GetCompanyCollection([ModelBinder(BinderType = typeof(ArrayModelBinder))]
 												IEnumerable<Guid> ids)
 	{
 		if(ids == null)
@@ -61,7 +62,7 @@ public class CompaniesController : ControllerBase
 			return BadRequest("Parameter ids is null");
 		}
 
-		var companyEntities = _repositoryManager.Company.GetByIds(ids, trackChanges: false);
+		var companyEntities = await _repositoryManager.Company.GetByIdsAsync(ids, trackChanges: false);
 
 		if(ids.Count() != companyEntities.Count())
 		{
@@ -75,7 +76,7 @@ public class CompaniesController : ControllerBase
 
 
 	[HttpPost]
-	public IActionResult CreateCompany([FromBody]CompanyForCreationDto company)
+	public async Task<IActionResult> CreateCompany([FromBody]CompanyForCreationDto company)
 	{
 		if (company is null)
 		{
@@ -92,7 +93,7 @@ public class CompaniesController : ControllerBase
 		var companyEntity = _mapper.Map<Company>(company);
 
 		_repositoryManager.Company.CreateCompany(companyEntity);
-		_repositoryManager.Save();
+		await _repositoryManager.SaveAsync();
 
 		var companyToReturn = _mapper.Map<CompanyDto>(companyEntity);
 
@@ -100,7 +101,7 @@ public class CompaniesController : ControllerBase
 	}
 
 	[HttpPost("collection")]
-	public IActionResult CreateCompanyCollection([FromBody]
+	public async Task<IActionResult> CreateCompanyCollection([FromBody]
 						 IEnumerable<CompanyForCreationDto> companyCollection)
 	{
 		if(companyCollection == null)
@@ -122,7 +123,7 @@ public class CompaniesController : ControllerBase
 			_repositoryManager.Company.CreateCompany(company);
 		}
 
-		_repositoryManager.Save();
+		await _repositoryManager.SaveAsync();
 
 		var companyCollectionToReturn = _mapper.Map<IEnumerable<CompanyDto>>(companyEntities);
 		var ids = string.Join(",", companyCollectionToReturn.Select(c => c.Id));
@@ -131,9 +132,9 @@ public class CompaniesController : ControllerBase
 	}
 
 	[HttpDelete("{id}")]
-	public IActionResult DeleteCompany(Guid id)
+	public async Task<IActionResult> DeleteCompany(Guid id)
 	{
-		var company = _repositoryManager.Company.GetCompany(id, trackChanges: false);
+		var company = await _repositoryManager.Company.GetCompanyAsync(id, trackChanges: false);
 		if(company == null)
 		{
 			_loggerManager.LogInfo($"Company with id: {id} doesn't exist in the database.");			
@@ -141,13 +142,13 @@ public class CompaniesController : ControllerBase
 		}
 
 		_repositoryManager.Company.DeleteCompany(company);
-		_repositoryManager.Save();
+		await _repositoryManager.SaveAsync();
 
 		return NoContent();
 	}
 
     [HttpPut("{id}")]
-    public IActionResult UpdateCompany(Guid id, [FromBody]CompanyForUpdateDto company)
+    public async Task<IActionResult> UpdateCompany(Guid id, [FromBody]CompanyForUpdateDto company)
     {
         if(company == null)
         {
@@ -161,7 +162,7 @@ public class CompaniesController : ControllerBase
             return UnprocessableEntity(ModelState);
         }
 
-        var companyEntity = _repositoryManager.Company.GetCompany(id, trackChanges: true);
+        var companyEntity = await _repositoryManager.Company.GetCompanyAsync(id, trackChanges: true);
         if(companyEntity == null)
         {
             _loggerManager.LogInfo("Company with id: {id} doesn't exist in the database.");
@@ -169,7 +170,7 @@ public class CompaniesController : ControllerBase
         }
 
         _mapper.Map(company, companyEntity);
-        _repositoryManager.Save();
+        await _repositoryManager.SaveAsync();
 
         return NoContent();
     }
