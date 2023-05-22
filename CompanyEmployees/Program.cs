@@ -1,4 +1,5 @@
 using CompanyEmployees.Extensions;
+using CompanyEmployees.ActionFilters;
 using Contracts.Interfaces;
 using LoggerService;
 
@@ -24,6 +25,7 @@ builder.Services.ConfigureLoggerService();
 builder.Services.ConfigurePostgresContext(configuration);
 builder.Services.ConfigureRepositoryManager();
 builder.Services.Configure<ApiBehaviorOptions>(options => options.SuppressModelStateInvalidFilter = true);
+builder.Services.AddScoped<ValidationFilterAttribute>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

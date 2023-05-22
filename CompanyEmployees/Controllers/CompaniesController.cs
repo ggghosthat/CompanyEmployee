@@ -2,6 +2,7 @@ using Contracts.Interfaces;
 using Entities.DTO;
 using Entities.Models;
 using CompanyEmployees.Mapper;
+using CompanyEmployees.ActionFilters;
 
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -76,20 +77,9 @@ public class CompaniesController : ControllerBase
 
 
 	[HttpPost]
+    [ServiceFilter(typeof(ValidationFilterAttribute))]
 	public async Task<IActionResult> CreateCompany([FromBody]CompanyForCreationDto company)
 	{
-		if (company is null)
-		{
-			_loggerManager.LogError("CompanyForCreationDto object sent from client is null");
-			return BadRequest("CompanyForCreationDto object is null");
-		}
-        
-        if(!ModelState.IsValid)
-        {
-            _loggerManager.LogError("Invalid model data for CompanyForCreationDto object");
-            return UnprocessableEntity(ModelState);
-        }
-
 		var companyEntity = _mapper.Map<Company>(company);
 
 		_repositoryManager.Company.CreateCompany(companyEntity);
@@ -148,20 +138,9 @@ public class CompaniesController : ControllerBase
 	}
 
     [HttpPut("{id}")]
+    [ServiceFilter(typeof(ValidationFilterAttribute))]
     public async Task<IActionResult> UpdateCompany(Guid id, [FromBody]CompanyForUpdateDto company)
     {
-        if(company == null)
-        {
-            _loggerManager.LogError("CompanyForUpdateDto object sent from client is null.");
-            return BadRequest("CompanyForUpdateDto object is null.");
-        }
-
-        if(!ModelState.IsValid)
-        {
-            _loggerManager.LogError("Invalid data for model state of CompanyForUpdateDto object.");
-            return UnprocessableEntity(ModelState);
-        }
-
         var companyEntity = await _repositoryManager.Company.GetCompanyAsync(id, trackChanges: true);
         if(companyEntity == null)
         {
