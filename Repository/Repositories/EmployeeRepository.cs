@@ -3,7 +3,7 @@ using Contracts.Interfaces;
 using Entities.Models;
 
 using System.Threading.Tasks;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 namespace Repository;
 //Repository class which give us possibility to interact with "employee" table
 public class EmployeeRepository : RepositoryBase<Employee>, 

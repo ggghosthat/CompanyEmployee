@@ -1,11 +1,11 @@
 using Contracts.Interfaces;
 using Entities.DTO;
 using Entities.Models;
+using CompanyEmployees.ActionFilters;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.JsonPatch;
 using AutoMapper;
-
 namespace CompanyEmployees.Controllers;
 //These controller used for handling employees requests
 [ApiController]
@@ -25,7 +25,6 @@ public class EmployeesController : ControllerBase
 		_mapper = mapper;
 	}
 
-	// [HttpGet("{id}", Name="GetEmployeeForCompany")]
 	[HttpGet]
 	public async Task<IActionResult> GetEmployeesForCompany(Guid companyId)
 	{
@@ -66,21 +65,10 @@ public class EmployeesController : ControllerBase
 		return Ok(employeeDto);
 	}
 
-    [HttpPost("{id}")]
+    [HttpPost]
+    [ServiceFilter(typeof(ValidationFilterAttribute))]
 	public async Task<IActionResult> CreateEmployeeForCompany(Guid companyId, [FromBody]EmployeeForCreationDto employee)
 	{
-		if(employee == null)
-		{
-			_loggerManager.LogError("EmployeeForCreationDto object sent from client is null");
-			return BadRequest("EmployeeForCreationDto object is null");
-		}
-
-        if(!ModelState.IsValid)
-        {
-            _loggerManager.LogError("Invalid data for model state of EmployeeForCreationDto object.");
-            return UnprocessableEntity(ModelState);
-        }
-
 		var company = await _repositoryManager.Company.GetCompanyAsync(companyId, trackChanges: false);
 		if(company == null)
 		{
@@ -122,20 +110,9 @@ public class EmployeesController : ControllerBase
 	}
 
     [HttpPut("{id}")]
+    [ServiceFilter(typeof(ValidationFilterAttribute))]
     public async Task<IActionResult> UpdateEmployeeForCompany(Guid companyId, Guid id, [FromBody]EmployeeForUpdateDto employee)
     {
-        if(employee == null)
-        {
-            _loggerManager.LogError("EmployeeForUpdateDto object sent from client is null.");
-            return BadRequest("EmployeeForUpdateDto object is null");
-        }
-
-        if(!ModelState.IsValid)
-        {
-            _loggerManager.LogError("Invalid model state for the EmployeeForUpdateDto object.");
-            return UnprocessableEntity(ModelState);
-        }
-
         var company = await _repositoryManager.Company.GetCompanyAsync(companyId, trackChanges: false);
         if(company == null)
         {

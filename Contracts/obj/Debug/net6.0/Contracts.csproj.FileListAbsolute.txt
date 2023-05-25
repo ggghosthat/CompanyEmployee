@@ -15,20 +15,3 @@ E:/C# projects/CompanyEmployees_Project/Contracts/obj/Debug/net6.0/refint/Contra
 E:/C# projects/CompanyEmployees_Project/Contracts/obj/Debug/net6.0/Contracts.pdb
 E:/C# projects/CompanyEmployees_Project/Contracts/obj/Debug/net6.0/Contracts.genruntimeconfig.cache
 E:/C# projects/CompanyEmployees_Project/Contracts/obj/Debug/net6.0/ref/Contracts.dll
-/home/ggghosthat/repos/CompanyEmployee/Contracts/bin/Debug/net6.0/Contracts.deps.json
-/home/ggghosthat/repos/CompanyEmployee/Contracts/bin/Debug/net6.0/Contracts.runtimeconfig.json
-/home/ggghosthat/repos/CompanyEmployee/Contracts/bin/Debug/net6.0/Contracts.dll
-/home/ggghosthat/repos/CompanyEmployee/Contracts/bin/Debug/net6.0/Contracts.pdb
-/home/ggghosthat/repos/CompanyEmployee/Contracts/bin/Debug/net6.0/Entities.dll
-/home/ggghosthat/repos/CompanyEmployee/Contracts/bin/Debug/net6.0/Entities.pdb
-/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/Debug/net6.0/Contracts.csproj.AssemblyReference.cache
-/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/Debug/net6.0/Contracts.GeneratedMSBuildEditorConfig.editorconfig
-/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/Debug/net6.0/Contracts.AssemblyInfoInputs.cache
-/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/Debug/net6.0/Contracts.AssemblyInfo.cs
-/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/Debug/net6.0/Contracts.csproj.CoreCompileInputs.cache
-/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/Debug/net6.0/Contracts.csproj.CopyComplete
-/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/Debug/net6.0/Contracts.dll
-/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/Debug/net6.0/refint/Contracts.dll
-/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/Debug/net6.0/Contracts.pdb
-/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/Debug/net6.0/Contracts.genruntimeconfig.cache
-/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/Debug/net6.0/ref/Contracts.dll

@@ -3,7 +3,7 @@ using Contracts.Interfaces;
 using Entities.Models;
 
 using System.Linq;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 using System.Collections;
 using System.Threading.Tasks;
 
