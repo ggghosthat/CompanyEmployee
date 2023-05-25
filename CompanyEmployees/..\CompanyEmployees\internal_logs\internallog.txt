@@ -4338,3 +4338,21 @@
 2023-05-25 20:58:21.2057 Trace  Scanning Property LineEnding 'Default' NLog.Targets
 2023-05-25 20:58:21.2057 Trace FileTarget(Name=logfile) has 2 layouts
 2023-05-25 20:58:21.2083 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2023-05-25 21:17:36.8999 Info AppDomain Shutting down. LogFactory closing...
+2023-05-25 21:17:36.9047 Debug Stopping file watching for path '/home/ggghosthat/repos/CompanyEmployee/CompanyEmployees' filter 'nlog.config'
+2023-05-25 21:17:36.9084 Debug Closing logging configuration...
+2023-05-25 21:17:36.9084 Trace Closing FileTarget(Name=logfile)
+2023-05-25 21:17:36.9084 Debug FileTarget(Name=logfile): Closing...
+2023-05-25 21:17:36.9129 Debug FileTarget(Name=logfile): Closed.
+2023-05-25 21:17:36.9129 Trace Closing ..\logs\${shortdate}_logfile.txt
+2023-05-25 21:17:36.9136 Trace Closing Layout Renderer: ${literal}
+2023-05-25 21:17:36.9136 Trace Closing Layout Renderer: ${shortdate}
+2023-05-25 21:17:36.9136 Trace Closing Layout Renderer: ${literal}
+2023-05-25 21:17:36.9136 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2023-05-25 21:17:36.9136 Trace Closing Layout Renderer: ${longdate}
+2023-05-25 21:17:36.9136 Trace Closing Layout Renderer: ${literal}
+2023-05-25 21:17:36.9136 Trace Closing Layout Renderer: ${level}
+2023-05-25 21:17:36.9136 Trace Closing Layout Renderer: ${literal}
+2023-05-25 21:17:36.9136 Trace Closing Layout Renderer: ${message}
+2023-05-25 21:17:36.9136 Debug Finished closing logging configuration.
+2023-05-25 21:17:36.9136 Info LogFactory has been closed.

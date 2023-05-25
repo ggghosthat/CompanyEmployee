@@ -1,6 +1,7 @@
 using Contracts.Interfaces;
 using Entities.DTO;
 using Entities.Models;
+using Entities.RequestFeatures;
 using CompanyEmployees.ActionFilters;
 
 using Microsoft.AspNetCore.Mvc;
@@ -26,7 +27,7 @@ public class EmployeesController : ControllerBase
 	}
 
 	[HttpGet]
-	public async Task<IActionResult> GetEmployeesForCompany(Guid companyId)
+	public async Task<IActionResult> GetEmployeesForCompany(Guid companyId, [FromQuery] EmployeeParameters employeeParameters)
 	{
 		var company = await _repositoryManager.Company.GetCompanyAsync(companyId, false);
 
@@ -36,7 +37,7 @@ public class EmployeesController : ControllerBase
 			return NotFound();
 		}
 
-		var employees = await _repositoryManager.Employee.GetEmployeesAsync(companyId, false);
+		var employees = await _repositoryManager.Employee.GetEmployeesAsync(companyId, employeeParameters, false);
 
 		var employeeDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
 
