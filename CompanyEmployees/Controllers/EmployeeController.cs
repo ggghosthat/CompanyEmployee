@@ -109,7 +109,7 @@ public class EmployeesController : ControllerBase
 		return NoContent();
 	}
 
-    [HttpPut("{id}")]
+    [HttpPut]
     [ServiceFilter(typeof(ValidationFilterAttribute))]
     public async Task<IActionResult> UpdateEmployeeForCompany(Guid companyId, Guid id, [FromBody]EmployeeForUpdateDto employee)
     {

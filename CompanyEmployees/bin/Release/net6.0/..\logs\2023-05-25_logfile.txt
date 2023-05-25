@@ -1,1 +1,6 @@
 2023-05-25 14:05:12.6081 ERROR Object sent from client is null. Controller: Employees, action: CreateEmployeeForCompany
+2023-05-25 19:32:39.1971 INFO Employee with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
+2023-05-25 19:37:32.0212 INFO Employee with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
+2023-05-25 19:43:40.2812 INFO Employee with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
+2023-05-25 20:54:33.9305 INFO Employee with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
+2023-05-25 20:55:57.1891 INFO Employee with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.

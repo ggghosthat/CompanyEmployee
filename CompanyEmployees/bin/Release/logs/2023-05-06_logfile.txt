@@ -1,2 +1,0 @@
-2023-05-06 23:37:16.9731 INFO Employee with id: 86dba8c0-d178-41e7-938c-ed49778fb52a doesn't exist in the database.
-2023-05-06 23:45:43.8291 INFO Company with id: 12be2c9f-d5df-4c4f-1437-08db4330f5c3 does not exists in the database
