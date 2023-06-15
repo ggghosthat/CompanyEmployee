@@ -6,6 +6,7 @@ using CompanyEmployees.ActionFilters;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.JsonPatch;
+using Newtonsoft.Json;
 using AutoMapper;
 namespace CompanyEmployees.Controllers;
 //These controller used for handling employees requests
@@ -38,6 +39,9 @@ public class EmployeesController : ControllerBase
 		}
 
 		var employees = await _repositoryManager.Employee.GetEmployeesAsync(companyId, employeeParameters, false);
+
+        Response.Headers.Add("X-Pagination",
+                             JsonConvert.SerializeObject(employees.MetaData));
 
 		var employeeDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
 
