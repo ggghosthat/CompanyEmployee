@@ -1,7 +1,9 @@
 using Repository.Base;
+using Repository.Extensions;
 using Contracts.Interfaces;
 using Entities.Models;
 using Entities.RequestFeatures;
+
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,7 +20,9 @@ public class EmployeeRepository : RepositoryBase<Employee>,
                                                                EmployeeParameters employeeParameters,
                                                                bool trackChanges)
     {
-		var employees = await FindByCondition(e => e.CompanyId.Equals(companyId) && (e.Age >= employeeParameters.MinAge) && (e.Age <= employeeParameters.MaxAge), trackChanges)
+		var employees = await FindByCondition(e => e.CompanyId.Equals(companyId), trackChanges)
+                        .FilterEmployees(employeeParameters.MinAge, employeeParameters.MaxAge)
+                        .Search(employeeParameters.SearchTerm)
 		                .OrderBy(e => e.Name) 
                         .ToListAsync();
 
