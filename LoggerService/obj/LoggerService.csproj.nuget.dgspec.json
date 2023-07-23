@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/ggghosthat/repos/CompanyEmployee/LoggerService/LoggerService.csproj": {}
+    "/home/jake/repos/CompanyEmployee/LoggerService/LoggerService.csproj": {}
   },
   "projects": {
-    "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj": {
+    "/home/jake/repos/CompanyEmployee/Contracts/Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj",
+        "projectUniqueName": "/home/jake/repos/CompanyEmployee/Contracts/Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj",
-        "packagesPath": "/home/ggghosthat/.nuget/packages/",
-        "outputPath": "/home/ggghosthat/repos/CompanyEmployee/Contracts/obj/",
+        "projectPath": "/home/jake/repos/CompanyEmployee/Contracts/Contracts.csproj",
+        "packagesPath": "/home/jake/.nuget/packages/",
+        "outputPath": "/home/jake/repos/CompanyEmployee/Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ggghosthat/.nuget/NuGet/NuGet.Config"
+          "/home/jake/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/ggghosthat/repos/CompanyEmployee/Entities/Entities.csproj": {
-                "projectPath": "/home/ggghosthat/repos/CompanyEmployee/Entities/Entities.csproj"
+              "/home/jake/repos/CompanyEmployee/Entities/Entities.csproj": {
+                "projectPath": "/home/jake/repos/CompanyEmployee/Entities/Entities.csproj"
               }
             }
           }
@@ -57,21 +57,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/ggghosthat/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/jake/dotnet/sdk/6.0.412/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/ggghosthat/repos/CompanyEmployee/Entities/Entities.csproj": {
+    "/home/jake/repos/CompanyEmployee/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ggghosthat/repos/CompanyEmployee/Entities/Entities.csproj",
+        "projectUniqueName": "/home/jake/repos/CompanyEmployee/Entities/Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "/home/ggghosthat/repos/CompanyEmployee/Entities/Entities.csproj",
-        "packagesPath": "/home/ggghosthat/.nuget/packages/",
-        "outputPath": "/home/ggghosthat/repos/CompanyEmployee/Entities/obj/",
+        "projectPath": "/home/jake/repos/CompanyEmployee/Entities/Entities.csproj",
+        "packagesPath": "/home/jake/.nuget/packages/",
+        "outputPath": "/home/jake/repos/CompanyEmployee/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ggghosthat/.nuget/NuGet/NuGet.Config"
+          "/home/jake/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -124,21 +124,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/ggghosthat/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/jake/dotnet/sdk/6.0.412/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/ggghosthat/repos/CompanyEmployee/LoggerService/LoggerService.csproj": {
+    "/home/jake/repos/CompanyEmployee/LoggerService/LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ggghosthat/repos/CompanyEmployee/LoggerService/LoggerService.csproj",
+        "projectUniqueName": "/home/jake/repos/CompanyEmployee/LoggerService/LoggerService.csproj",
         "projectName": "LoggerService",
-        "projectPath": "/home/ggghosthat/repos/CompanyEmployee/LoggerService/LoggerService.csproj",
-        "packagesPath": "/home/ggghosthat/.nuget/packages/",
-        "outputPath": "/home/ggghosthat/repos/CompanyEmployee/LoggerService/obj/",
+        "projectPath": "/home/jake/repos/CompanyEmployee/LoggerService/LoggerService.csproj",
+        "packagesPath": "/home/jake/.nuget/packages/",
+        "outputPath": "/home/jake/repos/CompanyEmployee/LoggerService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ggghosthat/.nuget/NuGet/NuGet.Config"
+          "/home/jake/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -150,8 +150,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj": {
-                "projectPath": "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj"
+              "/home/jake/repos/CompanyEmployee/Contracts/Contracts.csproj": {
+                "projectPath": "/home/jake/repos/CompanyEmployee/Contracts/Contracts.csproj"
               }
             }
           }
@@ -187,7 +187,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/ggghosthat/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/jake/dotnet/sdk/6.0.412/RuntimeIdentifierGraph.json"
         }
       }
     }

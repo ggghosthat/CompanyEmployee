@@ -284,11 +284,11 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/7.0.4": {
+      "Microsoft.EntityFrameworkCore.Design/7.0.5": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.14.1",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.5",
           "Microsoft.Extensions.DependencyModel": "7.0.0",
           "Mono.TextTemplating": "2.2.1"
         },
@@ -1945,10 +1945,10 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/7.0.4": {
-      "sha512": "LI/ML3w17ap5IUmEKOPVnGJYi/XSDJW3Rf42utNF0e1tidmKtSkjwoTqIKLt2hE+jQJrlzeaqu5YiqdoFWVuZw==",
+    "Microsoft.EntityFrameworkCore.Design/7.0.5": {
+      "sha512": "fzoU+Jk/chkqVOzDjuF+fwdc/6Tyqbp9L7rDORqB6IwHRG7nr+QnFOPdRi3B5kAZldvsvhUt+6Cl5qzeLT7B0Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/7.0.4",
+      "path": "microsoft.entityframeworkcore.design/7.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1956,7 +1956,7 @@
         "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.7.0.4.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.7.0.5.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
@@ -4529,7 +4529,7 @@
       "Microsoft.AspNetCore.JsonPatch >= 7.0.5",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.16",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
-      "Microsoft.EntityFrameworkCore.Design >= 7.0.4",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.4",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.4",
@@ -4538,19 +4538,19 @@
     ]
   },
   "packageFolders": {
-    "/home/ggghosthat/.nuget/packages/": {}
+    "/home/jake/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/CompanyEmployees.csproj",
+      "projectUniqueName": "/home/jake/repos/CompanyEmployee/CompanyEmployees/CompanyEmployees.csproj",
       "projectName": "CompanyEmployees",
-      "projectPath": "/home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/CompanyEmployees.csproj",
-      "packagesPath": "/home/ggghosthat/.nuget/packages/",
-      "outputPath": "/home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/obj/",
+      "projectPath": "/home/jake/repos/CompanyEmployee/CompanyEmployees/CompanyEmployees.csproj",
+      "packagesPath": "/home/jake/.nuget/packages/",
+      "outputPath": "/home/jake/repos/CompanyEmployee/CompanyEmployees/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/ggghosthat/.nuget/NuGet/NuGet.Config"
+        "/home/jake/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -4562,14 +4562,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj": {
-              "projectPath": "/home/ggghosthat/repos/CompanyEmployee/Contracts/Contracts.csproj"
+            "/home/jake/repos/CompanyEmployee/Contracts/Contracts.csproj": {
+              "projectPath": "/home/jake/repos/CompanyEmployee/Contracts/Contracts.csproj"
             },
-            "/home/ggghosthat/repos/CompanyEmployee/LoggerService/LoggerService.csproj": {
-              "projectPath": "/home/ggghosthat/repos/CompanyEmployee/LoggerService/LoggerService.csproj"
+            "/home/jake/repos/CompanyEmployee/LoggerService/LoggerService.csproj": {
+              "projectPath": "/home/jake/repos/CompanyEmployee/LoggerService/LoggerService.csproj"
             },
-            "/home/ggghosthat/repos/CompanyEmployee/Repository/Repository.csproj": {
-              "projectPath": "/home/ggghosthat/repos/CompanyEmployee/Repository/Repository.csproj"
+            "/home/jake/repos/CompanyEmployee/Repository/Repository.csproj": {
+              "projectPath": "/home/jake/repos/CompanyEmployee/Repository/Repository.csproj"
             }
           }
         }
@@ -4604,7 +4604,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.4, )"
+            "version": "[7.0.5, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
@@ -4644,7 +4644,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/ggghosthat/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/jake/dotnet/sdk/6.0.412/RuntimeIdentifierGraph.json"
       }
     }
   }
