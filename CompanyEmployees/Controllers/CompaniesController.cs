@@ -1,6 +1,8 @@
 using Contracts.Interfaces;
 using Entities.DTO;
 using Entities.Models;
+using Entities.RequestFeatures;
+
 using CompanyEmployees.Mapper;
 using CompanyEmployees.ActionFilters;
 
@@ -31,6 +33,16 @@ public class CompaniesController : ControllerBase
 	public async Task<IActionResult> GetCompanies()
 	{
 		var companies = await _repositoryManager.Company.GetAllCompaniesAsync(false);
+
+		var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
+
+		return Ok(companiesDto);
+	}
+
+	[HttpGet("dive")]
+	public async Task<IActionResult> GetCompanies([FromQuery] CompanyParameters companyParameters)
+	{		
+		var companies = await _repositoryManager.Company.GetCompaniesAsync(companyParameters, false);
 
 		var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
 

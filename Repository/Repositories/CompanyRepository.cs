@@ -1,7 +1,10 @@
 using Repository.Base;
+using Repository.Extensions;
 using Contracts.Interfaces;
 using Entities.Models;
+using Entities.RequestFeatures;
 
+using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Collections;
@@ -25,9 +28,21 @@ public class CompanyRepository : RepositoryBase<Company>,
 		await FindByCondition(x => ids.Contains(x.Id), trackChanges)
 		.ToListAsync();
 
-	public async Task<Company> GetCompanyAsync(Guid companyId, bool trackChanges) =>
+	public async Task<Company> GetCompanyAsync(Guid companyId,
+											   bool trackChanges) =>
 		await FindByCondition(c => c.Id.Equals(companyId), trackChanges)
 		.SingleOrDefaultAsync();
+
+	public async Task<IEnumerable<Company>> GetCompaniesAsync(CompanyParameters companyParameters, bool trackChanges)
+	{
+		var companies = await FindAll(trackChanges)
+							 .FilterCompanies(companyParameters.Country)
+							 .Search(companyParameters.SearchTerm)
+							 .Sort(companyParameters.OrderBy)
+							 .ToListAsync();
+
+		return companies;
+	}
 
 	public void CreateCompany(Company company) =>
 		Create(company);

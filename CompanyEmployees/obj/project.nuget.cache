@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WMMY232R+qEs9EgFeC6gMQgB/DF23XHcq2qjckeUp8QCtdPY5Idaz26IC/rDvcUiOMPAZojnC0IQhQf3plP5zQ==",
+  "dgSpecHash": "qQbkfsKVleOon/vr8ueQBbOeF/8Qf0Zq/4LoKaZdssFGWNkOlb95jr51W1Dz0O+Sp8o+JhHg2kP91Vk7/QkYKQ==",
   "success": true,
   "projectFilePath": "/home/jake/repos/CompanyEmployee/CompanyEmployees/CompanyEmployees.csproj",
   "expectedPackageFiles": [
@@ -73,6 +73,7 @@
     "/home/jake/.nuget/packages/system.globalization/4.3.0/system.globalization.4.3.0.nupkg.sha512",
     "/home/jake/.nuget/packages/system.identitymodel.tokens.jwt/6.21.0/system.identitymodel.tokens.jwt.6.21.0.nupkg.sha512",
     "/home/jake/.nuget/packages/system.io/4.3.0/system.io.4.3.0.nupkg.sha512",
+    "/home/jake/.nuget/packages/system.linq.dynamic.core/1.3.3/system.linq.dynamic.core.1.3.3.nupkg.sha512",
     "/home/jake/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
     "/home/jake/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
     "/home/jake/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
