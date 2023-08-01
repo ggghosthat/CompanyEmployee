@@ -1,7 +1,9 @@
 using CompanyEmployees.Extensions;
 using CompanyEmployees.ActionFilters;
 using Contracts.Interfaces;
+using Entities.DTO;
 using LoggerService;
+using Repository.Shapper;
 
 using System.IO;
 using Microsoft.AspNetCore.Builder;
@@ -26,7 +28,7 @@ builder.Services.ConfigurePostgresContext(configuration);
 builder.Services.ConfigureRepositoryManager();
 builder.Services.Configure<ApiBehaviorOptions>(options => options.SuppressModelStateInvalidFilter = true);
 builder.Services.AddScoped<ValidationFilterAttribute>();
-
+builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
