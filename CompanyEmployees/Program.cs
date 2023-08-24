@@ -23,9 +23,11 @@ IConfiguration configuration = builder.Configuration;
 builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();
 builder.Services.ConfigureLoggerService();
+builder.Services.ConfigureResponseCaching();
 //builder.Services.ConfigureSqlContext(configuration);
 builder.Services.ConfigurePostgresContext(configuration);
 builder.Services.ConfigureRepositoryManager();
+builder.Services.ConfigureHttpCacheHeaders();
 builder.Services.Configure<ApiBehaviorOptions>(options => options.SuppressModelStateInvalidFilter = true);
 builder.Services.AddScoped<ValidationFilterAttribute>();
 builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
@@ -37,6 +39,7 @@ builder.Services.AddControllers(config =>
 {
 	config.RespectBrowserAcceptHeader = true;
 	config.ReturnHttpNotAcceptable = true;
+    config.CacheProfiles.Add("120SecondsDuration", new CacheProfile {Duration = 120});
 }).AddNewtonsoftJson()
   .AddXmlDataContractSerializerFormatters()
   .AddCustomCSVFormatter();
@@ -61,6 +64,9 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions()
 {
 	ForwardedHeaders = ForwardedHeaders.All
 });
+
+app.UseResponseCaching();
+app.UseHttpCacheHeaders();
 
 app.UseRouting();
 

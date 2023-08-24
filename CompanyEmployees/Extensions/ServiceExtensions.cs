@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using Marvin.Cache.Headers;
 namespace CompanyEmployees.Extensions;
 //This Extension class provides speciall extenssion methods to work with some services
 public static class ServiceExtensions
@@ -18,7 +19,7 @@ public static class ServiceExtensions
 	public static void ConfigureCors(this IServiceCollection services) =>
 		services.AddCors(options => 
 		{
-			options.AddPolicy("CorsPolicy", builder =>
+            options.AddPolicy("CorsPolicy", builder =>
 				builder.AllowAnyOrigin()
 					.AllowAnyMethod()
 					.AllowAnyHeader());
@@ -54,4 +55,20 @@ public static class ServiceExtensions
 
 	public static IMvcBuilder AddCustomCSVFormatter(this IMvcBuilder builder) => 
 		builder.AddMvcOptions(config => config.OutputFormatters.Add(new CsvOutputFormatter()));
+
+    public static void ConfigureResponseCaching(this IServiceCollection services) =>
+        services.AddResponseCaching();
+
+    public static void ConfigureHttpCacheHeaders(this IServiceCollection services) =>
+        services.AddHttpCacheHeaders(
+            (expirationOpt) => 
+            {
+                expirationOpt.MaxAge = 60;
+                expirationOpt.CacheLocation = CacheLocation.Private;
+            },
+            (validationOpt) =>
+            {
+                validationOpt.MustRevalidate = true;
+            }
+        );
 }

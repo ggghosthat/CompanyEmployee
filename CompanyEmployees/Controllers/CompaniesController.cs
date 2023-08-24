@@ -9,11 +9,13 @@ using CompanyEmployees.ActionFilters;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
+using Marvin.Cache.Headers;
 namespace CompanyEmployees.Controllers;
 
 //These controller used for handling companies requests
 [ApiController]
 [Route("api/companies")]
+//[ResponseCache(CacheProfileName = "120SecondsDuration")]
 public class CompaniesController : ControllerBase
 {
 	private readonly IRepositoryManager _repositoryManager;
@@ -50,6 +52,8 @@ public class CompaniesController : ControllerBase
 	}
 
 	[HttpGet("{id}", Name = "CompanyById" )]
+    [HttpCacheExpiration(CacheLocation = CacheLocation.Public, MaxAge = 65)]
+    [HttpCacheValidation(MustRevalidate = false)]
 	public async Task<IActionResult> GetCompany(Guid id)
 	{
 		var company = await _repositoryManager.Company.GetCompanyAsync(id, false);

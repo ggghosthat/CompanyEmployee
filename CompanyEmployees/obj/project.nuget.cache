@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qQbkfsKVleOon/vr8ueQBbOeF/8Qf0Zq/4LoKaZdssFGWNkOlb95jr51W1Dz0O+Sp8o+JhHg2kP91Vk7/QkYKQ==",
+  "dgSpecHash": "OpJpFL6PFHBuuEY5E6H0fgg0KA2BpAnNuEM0ZvdqReBLUvJtYWTiDKwLqp1CUYqAI10HCe43xCav+VCr4dyapg==",
   "success": true,
   "projectFilePath": "/home/jake/repos/CompanyEmployee/CompanyEmployees/CompanyEmployees.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "/home/jake/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/home/jake/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",
     "/home/jake/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/jake/.nuget/packages/marvin.cache.headers/6.1.0/marvin.cache.headers.6.1.0.nupkg.sha512",
     "/home/jake/.nuget/packages/microsoft.aspnetcore.jsonpatch/7.0.5/microsoft.aspnetcore.jsonpatch.7.0.5.nupkg.sha512",
     "/home/jake/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/6.0.16/microsoft.aspnetcore.mvc.newtonsoftjson.6.0.16.nupkg.sha512",
     "/home/jake/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

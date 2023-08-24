@@ -345,3 +345,4 @@ E:/C# projects/CompanyEmployees_Project/CompanyEmployees/obj/Debug/net6.0/ref/Co
 /home/jake/repos/CompanyEmployee/CompanyEmployees/obj/Debug/net6.0/CompanyEmployees.genruntimeconfig.cache
 /home/jake/repos/CompanyEmployee/CompanyEmployees/obj/Debug/net6.0/ref/CompanyEmployees.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/System.Linq.Dynamic.Core.dll
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Marvin.Cache.Headers.dll
