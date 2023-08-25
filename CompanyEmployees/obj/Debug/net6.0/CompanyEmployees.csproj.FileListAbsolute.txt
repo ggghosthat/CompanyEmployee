@@ -236,14 +236,15 @@ E:/C# projects/CompanyEmployees_Project/CompanyEmployees/obj/Debug/net6.0/ref/Co
 /home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/obj/Debug/net6.0/CompanyEmployees.pdb
 /home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/obj/Debug/net6.0/CompanyEmployees.genruntimeconfig.cache
 /home/ggghosthat/repos/CompanyEmployee/CompanyEmployees/obj/Debug/net6.0/ref/CompanyEmployees.dll
-/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/appsettings.Development.json
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/nlog.config
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/appsettings.Development.json
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/appsettings.json
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/CompanyEmployees
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/CompanyEmployees.deps.json
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/CompanyEmployees.runtimeconfig.json
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/CompanyEmployees.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/CompanyEmployees.pdb
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/AspNetCoreRateLimit.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/AutoMapper.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Azure.Core.dll
@@ -251,6 +252,7 @@ E:/C# projects/CompanyEmployees_Project/CompanyEmployees/obj/Debug/net6.0/ref/Co
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/EntityFramework.SqlServer.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/EntityFramework.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Humanizer.dll
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Marvin.Cache.Headers.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Microsoft.AspNetCore.JsonPatch.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
@@ -295,6 +297,7 @@ E:/C# projects/CompanyEmployees_Project/CompanyEmployees/obj/Debug/net6.0/ref/Co
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/System.Data.SqlClient.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/System.Drawing.Common.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/System.Linq.Dynamic.Core.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/System.Memory.Data.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/System.Runtime.Caching.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
@@ -344,5 +347,3 @@ E:/C# projects/CompanyEmployees_Project/CompanyEmployees/obj/Debug/net6.0/ref/Co
 /home/jake/repos/CompanyEmployee/CompanyEmployees/obj/Debug/net6.0/CompanyEmployees.pdb
 /home/jake/repos/CompanyEmployee/CompanyEmployees/obj/Debug/net6.0/CompanyEmployees.genruntimeconfig.cache
 /home/jake/repos/CompanyEmployee/CompanyEmployees/obj/Debug/net6.0/ref/CompanyEmployees.dll
-/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/System.Linq.Dynamic.Core.dll
-/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Marvin.Cache.Headers.dll

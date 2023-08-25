@@ -318,3 +318,5 @@ E:/C# projects/CompanyEmployees_Project/CompanyEmployees/bin/Release/net6.0/Newt
 /home/jake/repos/CompanyEmployee/CompanyEmployees/obj/Release/net6.0/CompanyEmployees.genruntimeconfig.cache
 /home/jake/repos/CompanyEmployee/CompanyEmployees/obj/Release/net6.0/ref/CompanyEmployees.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Release/net6.0/System.Linq.Dynamic.Core.dll
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Release/net6.0/AspNetCoreRateLimit.dll
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Release/net6.0/Marvin.Cache.Headers.dll

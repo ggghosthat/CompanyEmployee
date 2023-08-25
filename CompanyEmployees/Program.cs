@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.DependencyInjection;
 using NLog;
-
+using AspNetCoreRateLimit;
 LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +24,7 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();
 builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureResponseCaching();
+
 //builder.Services.ConfigureSqlContext(configuration);
 builder.Services.ConfigurePostgresContext(configuration);
 builder.Services.ConfigureRepositoryManager();
@@ -35,6 +36,7 @@ builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies() );
+builder.Services.ConfigureRateLimiting(configuration);
 builder.Services.AddControllers(config =>
 {
 	config.RespectBrowserAcceptHeader = true;
@@ -67,6 +69,8 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions()
 
 app.UseResponseCaching();
 app.UseHttpCacheHeaders();
+
+app.UseIpRateLimiting();
 
 app.UseRouting();
 

@@ -4,12 +4,14 @@ using Entities.Models;
 using Repository;
 using CompanyEmployees.Formatters;
 
+using System.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Marvin.Cache.Headers;
+using AspNetCoreRateLimit;
 namespace CompanyEmployees.Extensions;
 //This Extension class provides speciall extenssion methods to work with some services
 public static class ServiceExtensions
@@ -71,4 +73,16 @@ public static class ServiceExtensions
                 validationOpt.MustRevalidate = true;
             }
         );
+    public static IServiceCollection ConfigureRateLimiting(this IServiceCollection services, 
+                                            IConfiguration configuration) 
+    {
+        services.AddMemoryCache();
+
+        services.Configure<IpRateLimitOptions>(opt => configuration.GetSection("IpRateLimitingSettings").Bind(opt) );
+
+        services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+        services.AddInMemoryRateLimiting();
+
+        return services;
+    }
 }
