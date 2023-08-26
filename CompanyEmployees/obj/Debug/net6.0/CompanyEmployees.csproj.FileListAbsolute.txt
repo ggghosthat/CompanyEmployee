@@ -347,3 +347,8 @@ E:/C# projects/CompanyEmployees_Project/CompanyEmployees/obj/Debug/net6.0/ref/Co
 /home/jake/repos/CompanyEmployee/CompanyEmployees/obj/Debug/net6.0/CompanyEmployees.pdb
 /home/jake/repos/CompanyEmployee/CompanyEmployees/obj/Debug/net6.0/CompanyEmployees.genruntimeconfig.cache
 /home/jake/repos/CompanyEmployee/CompanyEmployees/obj/Debug/net6.0/ref/CompanyEmployees.dll
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll

@@ -37,6 +37,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies() );
 builder.Services.ConfigureRateLimiting(configuration);
+
+builder.Services.AddAuthentication();
+builder.Services.ConfigureIdentity();
+
 builder.Services.AddControllers(config =>
 {
 	config.RespectBrowserAcceptHeader = true;
@@ -74,6 +78,7 @@ app.UseIpRateLimiting();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

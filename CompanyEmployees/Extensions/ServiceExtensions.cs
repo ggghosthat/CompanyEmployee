@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Marvin.Cache.Headers;
 using AspNetCoreRateLimit;
+using Microsoft.AspNetCore.Identity;
+
 namespace CompanyEmployees.Extensions;
 //This Extension class provides speciall extenssion methods to work with some services
 public static class ServiceExtensions
@@ -84,5 +86,22 @@ public static class ServiceExtensions
         services.AddInMemoryRateLimiting();
 
         return services;
+    }
+
+    public static void ConfigureIdentity(this IServiceCollection services)
+    {
+        var builder = services.AddIdentityCore<User>(o =>
+        {
+            o.Password.RequireDigit = true;
+            o.Password.RequireLowercase = false;
+            o.Password.RequireUppercase = false;
+            o.Password.RequireNonAlphanumeric = false;
+            o.Password.RequiredLength = 10;
+            o.User.RequireUniqueEmail = true;
+        });
+
+        builder = new IdentityBuilder(builder.UserType, typeof(IdentityRole), builder.Services);
+        builder.AddEntityFrameworkStores<RepositoryContext>()
+            .AddDefaultTokenProviders();
     }
 }
