@@ -1,0 +1,2 @@
+2023-08-31 21:43:57.2283 ERROR Invalid model state for the object. Controller: Authentication, action: RegisterUser
+2023-08-31 21:44:12.4719 ERROR Invalid model state for the object. Controller: Authentication, action: RegisterUser

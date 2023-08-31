@@ -2,6 +2,8 @@ using Contracts.Interfaces;
 using Entities.Models;
 using Entities.DTO;
 
+using CompanyEmployees.ActionFilters;
+
 using System.Threading;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
@@ -26,7 +28,9 @@ public class AuthenticationController : ControllerBase
     }
 
 
-    public async Task<IActionResult> RegisterUser([FromBody] UserForRegistrationDto userForRegistration)
+    [HttpPost]
+    [ServiceFilter(typeof(ValidationFilterAttribute))]
+    public async Task<IActionResult> RegisterUser([FromBody]UserForRegistrationDto userForRegistration)
     {
         var user = _mapper.Map<User>(userForRegistration);
 
