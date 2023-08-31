@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bamyfngr/60zmf1ERpqPkfRHemolKKBJinfrKT86lr2Uh7CGnKJNYiUDffkrkxRf5pTTM+E+zf4QE8PKmvT6wg==",
+  "dgSpecHash": "7Rh2T+FpPJLb9eXpwHgsr5gzx4KoW/DtJ2FZ1M1AVzGEufahDuEdz4XDkYoj59Qgktcl90lq2VfuH7dCqHFIvQ==",
   "success": true,
   "projectFilePath": "/home/jake/repos/CompanyEmployee/CompanyEmployees/CompanyEmployees.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "/home/jake/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",
     "/home/jake/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/jake/.nuget/packages/marvin.cache.headers/6.1.0/marvin.cache.headers.6.1.0.nupkg.sha512",
+    "/home/jake/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.21/microsoft.aspnetcore.authentication.jwtbearer.6.0.21.nupkg.sha512",
     "/home/jake/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.21/microsoft.aspnetcore.cryptography.internal.6.0.21.nupkg.sha512",
     "/home/jake/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/6.0.21/microsoft.aspnetcore.cryptography.keyderivation.6.0.21.nupkg.sha512",
     "/home/jake/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/6.0.21/microsoft.aspnetcore.identity.entityframeworkcore.6.0.21.nupkg.sha512",

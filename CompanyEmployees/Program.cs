@@ -40,6 +40,7 @@ builder.Services.ConfigureRateLimiting(configuration);
 
 builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
+builder.Services.ConfigureJWT(configuration);
 
 builder.Services.AddControllers(config =>
 {

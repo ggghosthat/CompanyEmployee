@@ -4,6 +4,7 @@ using Entities.Models;
 using Repository;
 using CompanyEmployees.Formatters;
 
+using System.Text;
 using System.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Mvc;
@@ -13,7 +14,8 @@ using Microsoft.EntityFrameworkCore;
 using Marvin.Cache.Headers;
 using AspNetCoreRateLimit;
 using Microsoft.AspNetCore.Identity;
-
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 namespace CompanyEmployees.Extensions;
 //This Extension class provides speciall extenssion methods to work with some services
 public static class ServiceExtensions
@@ -103,5 +105,32 @@ public static class ServiceExtensions
         builder = new IdentityBuilder(builder.UserType, typeof(IdentityRole), builder.Services);
         builder.AddEntityFrameworkStores<RepositoryContext>()
             .AddDefaultTokenProviders();
+    }
+
+    public static void ConfigureJWT(this IServiceCollection services,
+                                         IConfiguration configuration)
+    {
+        var jwtSettings = configuration.GetSection("JwtSettings");
+        var secretKey = Environment.GetEnvironmentVariable("SECRET1");
+
+        services.AddAuthentication(opt => 
+        {
+            opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+        .AddJwtBearer(options => 
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+               ValidateIssuer = true,
+               ValidateAudience = true,
+               ValidateLifetime = true,
+               ValidateIssuerSigningKey = true,
+
+               ValidIssuer = jwtSettings.GetSection("validIssuer").Value,
+               ValidAudience = jwtSettings.GetSection("valueAudience").Value,
+               IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+            };
+        });
     }
 }
