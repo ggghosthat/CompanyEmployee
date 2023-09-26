@@ -3,6 +3,7 @@ using CompanyEmployees.ActionFilters;
 using Contracts.Interfaces;
 using Entities.DTO;
 using LoggerService;
+using Repository;
 using Repository.Shapper;
 
 using System.IO;
@@ -19,7 +20,6 @@ var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;
 
 // Add services to the container.
-
 builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();
 builder.Services.ConfigureLoggerService();
@@ -32,6 +32,8 @@ builder.Services.ConfigureHttpCacheHeaders();
 builder.Services.Configure<ApiBehaviorOptions>(options => options.SuppressModelStateInvalidFilter = true);
 builder.Services.AddScoped<ValidationFilterAttribute>();
 builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
+builder.Services.AddScoped<IAuthenticationManager, AuthenticationManager>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

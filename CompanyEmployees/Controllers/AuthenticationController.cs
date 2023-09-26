@@ -17,11 +17,14 @@ public class AuthenticationController : ControllerBase
     private readonly ILoggerManager _logger;
     private readonly IMapper _mapper;
     private readonly UserManager<User> _userManager;
+    private readonly IAuthenticationManager _authManager;
 
-    public AuthenticationController(ILoggerManager logger,
+    public AuthenticationController(IAuthenticationManager authManager,
+                                    ILoggerManager logger,
                                     IMapper mapper,
                                     UserManager<User> userManager)
     {
+        _authManager = authManager;
         _logger = logger;
         _mapper = mapper;
         _userManager = userManager;
@@ -46,5 +49,19 @@ public class AuthenticationController : ControllerBase
         await _userManager.AddToRolesAsync(user, userForRegistration.Roles);
 
         return StatusCode(201);
+    }
+
+    [HttpPost("login")]
+    [ServiceFilter(typeof(ValidationFilterAttribute))]
+    public async Task<IActionResult> Authenticate([FromBody] UserAuthenticationDto userAuthentication)
+    {
+        if(!await _authManager.ValidateUser(userAuthentication))
+        {
+            Console.WriteLine("Not authenticated");
+            _logger.LogWarn($"{nameof(Authenticate)} : Authentication failed. Wrong name or password.");
+            return Unauthorized();
+        }
+        
+        return Ok(new {Token = await _authManager.CreateToken() });
     }
 }

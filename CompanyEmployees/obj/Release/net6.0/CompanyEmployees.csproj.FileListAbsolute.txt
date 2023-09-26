@@ -325,3 +325,4 @@ E:/C# projects/CompanyEmployees_Project/CompanyEmployees/bin/Release/net6.0/Newt
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Release/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Release/net6.0/Microsoft.Extensions.Identity.Core.dll
 /home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Release/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/home/jake/repos/CompanyEmployee/CompanyEmployees/bin/Release/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

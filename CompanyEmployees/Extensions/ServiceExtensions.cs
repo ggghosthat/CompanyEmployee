@@ -123,7 +123,7 @@ public static class ServiceExtensions
             options.TokenValidationParameters = new TokenValidationParameters
             {
                ValidateIssuer = true,
-               ValidateAudience = true,
+               ValidateAudience = false,
                ValidateLifetime = true,
                ValidateIssuerSigningKey = true,
 

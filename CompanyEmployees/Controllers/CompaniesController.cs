@@ -8,6 +8,7 @@ using CompanyEmployees.ActionFilters;
 
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using AutoMapper;
 using Marvin.Cache.Headers;
 namespace CompanyEmployees.Controllers;
@@ -31,7 +32,7 @@ public class CompaniesController : ControllerBase
 		_mapper = mapper;
 	}
 
-	[HttpGet]
+	[HttpGet(Name = "GetCompanies"), Authorize]
 	public async Task<IActionResult> GetCompanies()
 	{
 		var companies = await _repositoryManager.Company.GetAllCompaniesAsync(false);
