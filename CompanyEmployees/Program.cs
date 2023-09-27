@@ -43,6 +43,7 @@ builder.Services.ConfigureRateLimiting(configuration);
 builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
 builder.Services.ConfigureJWT(configuration);
+builder.Services.ConfigureSwagger();
 
 builder.Services.AddControllers(config =>
 {
@@ -60,7 +61,10 @@ ILoggerManager logger = app.Services.GetRequiredService<ILoggerManager>();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(s => 
+    {
+        s.SwaggerEndpoint("/swagger/v1/swagger.json", "Company Employee API");
+    });
 }
 
 app.ConfigureExceptionHandler(app.Services.GetService<ILoggerManager>());

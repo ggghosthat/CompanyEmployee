@@ -16,6 +16,7 @@ namespace CompanyEmployees.Controllers;
 //These controller used for handling companies requests
 [ApiController]
 [Route("api/companies")]
+[ApiExplorerSettings(GroupName = "v1")]
 //[ResponseCache(CacheProfileName = "120SecondsDuration")]
 public class CompaniesController : ControllerBase
 {
@@ -32,7 +33,7 @@ public class CompaniesController : ControllerBase
 		_mapper = mapper;
 	}
 
-	[HttpGet(Name = "GetCompanies"), Authorize]
+	[HttpGet(Name = "GetCompanies"), Authorize(Roles = "Manager")]
 	public async Task<IActionResult> GetCompanies()
 	{
 		var companies = await _repositoryManager.Company.GetAllCompaniesAsync(false);
